@@ -7,13 +7,14 @@ const expresiones = {
 }
 
 document.getElementById("nombre").addEventListener("blur", (evento) => {
+    
     const input = evento.currentTarget;
     const txtNombre = input.value;
     
     const feedbackNombre = document.getElementById("feedback-nombre");
 
     if( txtNombre.length > 30 ) {        
-        feedbackNombre.innerHTML = "Has alcanzado el limite de caracteres";
+        feedbackNombre.innerHTML = "Has superado el limite de caracteres";
         input.classList.remove("is-valid");
         input.classList.add("is-invalid");
         feedbackNombre.className = "invalid-feedback";
@@ -24,3 +25,31 @@ document.getElementById("nombre").addEventListener("blur", (evento) => {
         feedbackNombre.className = "valid-feedback";
     }
 });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ /*   const input = evento.currentTarget;
+    const txtNombre = input.value;
+    
+    const feedbackNombre = document.getElementById("feedback-nombre");
+
+    if( txtNombre.length > 30 ) {        
+        feedbackNombre.innerHTML = "Has superado el limite de caracteres";
+        input.classList.remove("is-valid");
+        input.classList.add("is-invalid");
+        feedbackNombre.className = "invalid-feedback";
+    } else {        
+        feedbackNombre.innerHTML = "Listo";
+        input.classList.remove("is-invalid");
+        input.classList.add("is-valid");
+        feedbackNombre.className = "valid-feedback";
+    }
+});
+
+*/
