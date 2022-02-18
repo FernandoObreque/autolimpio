@@ -1,31 +1,95 @@
-<!DOCTYPE html>
-<html lang="es-la">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoLimpio</title>
-</head>
-<body>
-    <h1>AutoLimpio</h1>
-    <p>Bienvenido a AutoLimpio® para contratar un servicio solicitamos la siguiente 
-        información del usuario</p>
-    <p>Registro del cliente</p>
-    <form>
-        <label for="RUT">Rut:</label>
-        <input type="text" id="RUT" name="RUT" placeholder="Solo números sin puntos" size="0" 
-        required pattern="[0-9]" maxlength="8"> 
-    <form>
-        <label for="Dverificador">-</label>
-        <input type="text" id="Dverificador" name="Dverificador" maxlength="1" size="1">
-    </form> <br>
-    <form>
-        <label for="Nombre">Nombre:</label>
-        <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nombre" maxlength="30"/>
-     <form>
-        <label for="Apellido">Apellido:</label>
-        <input type="text" id="Apellido" name="Apellido" placeholder="Ingrese su apellido" maxlength="30"/>
-     </form>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contacto</title>
+        <link href="style.css" rel="stylesheet" />
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />    
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    </head>
+    <body>
 
-</body>
+        <div class="container">
+          <br>  
+          <h1>AutoLimpio</h1>
+           <hr>
+        <p>Bienvenido a AutoLimpio® para contratar un servicio solicitamos la siguiente 
+            información del usuario</p>
+            <form action="contacto.html" id="formulario-contacto" class="row g-3">
+                
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre">
+                  <div id="feedback-nombre" class="valid-feedback">
+                  </div>
+                </div>
+
+
+                <div class="col-md-6">
+                  <label for="apellido" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="apellido">
+                  <div id="feedback-apellido" class="valid-feedback">
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email">
+                    <div id="feedback-email" class="valid-feedback">
+                     
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono">
+                    <div id="feedback-telefono" class="valid-feedback">
+                     
+                    </div>
+                  </div>
+
+                <div class="col-md-12">
+                  <label for="validationServer04" class="form-label">Sucursal</label>
+                  <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback">
+                    <option selected disabled value="">Selecciona una sucursal</option>
+                    <option>Valparaíso</option>
+                    <option>Santiago</option>
+                  </select>
+                  <div id="validationServer04Feedback" class="valid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                    <p>Motivo de contacto:</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                        <label class="form-check-label" for="validationFormCheck2">Felicitación</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                        <label class="form-check-label" for="validationFormCheck2">Queja</label>
+                    </div>
+                      <div class="form-check mb-3">
+                        <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                        <label class="form-check-label" for="validationFormCheck3">Consulta</label>
+                        <div class="invalid-feedback">More example invalid feedback text</div>
+                      </div>
+                </div>
+                <div class="col-12">
+                    <label for="validationTextarea" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="validationTextarea" placeholder="Escriba un comentario" required></textarea>
+                    <div class="invalid-feedback">
+                      Porfavor escriba un mensaje en el area de texto.
+                    </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+              </form>
+        </div>
+
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/autolimpio.js"></script>
+    </body>
 </html>
