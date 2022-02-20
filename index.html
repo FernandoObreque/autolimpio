@@ -43,33 +43,54 @@
                 
                 <div class="col-md-6">
                     <label for="nombre" class="form-label">Nombre</label>
-                    <input maxlength="30" type="text" class="form-control" id="nombre" placeholder="Marcelo">
+                    
+                    <input type="text" class="form-control" id="nombre" placeholder="Marcelo">
+                    
+                    <div id="feedback-nombre" class="invalid-feedback">
+                        <p class="invalid-feedback">Has superado el límite de caracteres</p>
+                    </div>
                     <div id="feedback-nombre" class="valid-feedback">
-                    <p class="invalid-feedback">Has superado el limite de caracteres</p>
+                        <p class="valid-feedback">OK</p>
                     </div>
                 </div>
 
 
                 <div class="col-md-6">
                     <label for="apellido" class="form-label">Apellido</label>
-                    <input maxlenght="30" type="text" class="form-control" id="apellido" placeholder="San Martin">
-                    <div id="feedback-apellido" class="valid-feedback">
+                    
+                    <input type="text" class="form-control" id="apellido" placeholder="San Martin">
+                    
+                    <div id="feedback-apellido" class="invalid-feedback">
+                        <p class="invalid-feedback">Has superado el límite de caracteres</p>
                     </div>
-                </div>
+                    <div id="feedback-apellido" class="valid-feedback">
+                        <p class="valid-feedback">OK</p>
+                    </div>
+                 </div>
 
                 <div class="col-md-6">
                     <label for="direccion" class="form-label">Dirección</label>
-                    <input maxlength="80" type="text" class="form-control" id="direccion" placeholder="Calle, número">
-                    <div id="feedback-email" class="valid-feedback">
-                     
+                    
+                    <input type="text" class="form-control" id="direccion" placeholder="Calle, número">
+                    
+                    <div id="feedback-direccion" class="invalid-feedback">
+                      <p class="invalid-feedback">Has superado el límite de caracteres</p>
+                    </div>
+                    <div id="feedback-direccion" class="valid-feedback">
+                      <p class="valid-feedback">OK</p>
                     </div>
                 </div>
                 
                 <div class="col-md-6">
                     <label for="rut" class="form-label">RUT</label>
-                    <input maxlength="8" type="text" class="form-control" id="rut" placeholder="Sin puntos">
+                    
+                    <input type="number" class="form-control" id="rut" placeholder="Sin puntos">-<input type="text" class="form-control" id="dv">
+                    
+                    <div id="feedback-rut" class="invalid-feedback">
+                      <p class="invalid-feedback">Has superado el límite de caracteres</p>
+                    </div>
                     <div id="feedback-rut" class="valid-feedback">
-                     
+                      <p class="valid-feedback">OK</p>
                     </div>
                 </div>
 
@@ -113,16 +134,28 @@
                 
                 <div class="col-md-6">
                     <label for="marca" class="form-label">Marca</label>
-                    <input maxlength="20" type="text" class="form-control" id="marca" placeholder="Chevrolet">
-                    <div id="feedback-nombre" class="valid-feedback">
+                    
+                    <input type="text" class="form-control" id="marca" placeholder="Chevrolet">
+                    
+                    <div id="feedback-marca" class="invalid-feedback">
+                        <p class="invalid-feedback">Has superado el límite de caracteres</p>
+                    </div>
+                    <div id="feedback-marca" class="valid-feedback">
+                        <p class="valid-feedback">OK</p>
                     </div>
                 </div>
 
 
                 <div class="col-md-6">
                     <label for="modelo" class="form-label">Modelo</label>
-                    <input maxlength="20" type="text" class="form-control" id="modelo" placeholder="Aveo">
-                    <div id="feedback-apellido" class="valid-feedback">
+                    
+                    <input type="text" class="form-control" id="modelo" placeholder="Aveo">
+                    
+                    <div id="feedback-modelo" class="invalid-feedback">
+                      <p class="invalid-feedback">Has superado el límite de caracteres</p>
+                    </div>
+                    <div id="feedback-modelo" class="valid-feedback">
+                      <p class="valid-feedback">OK</p>
                     </div>
                 </div>
 
