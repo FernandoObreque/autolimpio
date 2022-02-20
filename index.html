@@ -160,11 +160,17 @@
                 </div>
 
                 <div class="col-md-6">
-                    <label for="año" class="form-label">Año</label>
-                    <input maxlength="4" type="text" class="form-control" id="año" placeholder="2015">
-                    <div id="feedback-email" class="valid-feedback">
-                     
-                    </div>
+                    
+                  <label for="ano" class="form-label">Año</label>
+                  
+                  <input type="number" class="form-control" id="ano" placeholder="2015">
+                  
+                  <div id="feedback-ano" class="invalid-feedback">
+                      <p class="invalid-feedback">Has superado el límite de caracteres</p>
+                  </div>
+                  <div id="feedback-ano" class="valid-feedback">
+                      <p class="valid-feedback">OK</p>
+                  </div>
                 </div>
 
                 <div class="col-md-6">
@@ -196,13 +202,13 @@
                       <div class="form-check mb-3">
                         <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
                         <label class="form-check-label" for="validationFormCheck3">Lavado exterior y de motor - $12000</label>
-                        <div class="invalid-feedback">More example invalid feedback text</div>
+                        <div class="invalid-feedback"></div>
                       </div>
                 </div>
 
                 <div class="col-md-6">
                     <label for="validationServer04" class="form-label">Encargado del servicio</label>
-                    <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback">
+                    <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
                         <option selected disabled value="">Seleccione un encargado</option>
                         <option>Encargado 1 - Juan Zuñiga</option>
                         <option>Encargado 2 - Rodrigo Montecinos</option>
@@ -215,7 +221,7 @@
 
                 <div class="col-md-3">
                     <label for="fecha" class="form-label">Fecha</label>
-                    <input maxlength="4" type="datetime-local" class="form-control" id="fecha" >
+                    <input maxlength="4" type="datetime-local" class="form-control" id="fecha" required>
                     <div id="feedback-fecha" class="valid-feedback">
                      
                     </div>
@@ -223,7 +229,7 @@
 
                 <div class="col-md-3">
                     <label for="hora" class="form-label">Hora</label>
-                    <input maxlength="4" type="time" class="form-control" id="hora" >
+                    <input maxlength="4" type="time" class="form-control" id="hora" required>
                     <div id="feedback-hora" class="valid-feedback">
                      
                     </div>
